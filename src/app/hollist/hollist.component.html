@@ -1,0 +1,16 @@
+<div class='holidayList'>
+	<!-- <ul class='holidayUl'>
+	    <li *ngFor="let holiday of holidayList">
+	       <a routerLink="/detail/{{holiday.name}}">
+	         <span class="badge">{{holiday.date}}</span>
+	       </a>
+	    </li>
+	  </ul> -->
+  <mat-nav-list>
+	  <mat-list-item *ngFor="let holiday of holidayList">
+	      <button mat-raised-button color='primary'> <a routerLink="/detail/{{holiday.name}}">
+	     	 <span class="badge">{{holiday.date}}</span>
+	     </a></button>
+	  </mat-list-item>
+   </mat-nav-list>
+</div>
